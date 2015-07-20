@@ -156,13 +156,12 @@ Exercises.strings3 = function () {
 // (including the enclosing single quotes).
 Exercises.strings4 = function () {
 
-  var answer 
+  var answer;
 // (including the enclosing single quotes).
 
   // Uncomment the following line and type your answer:
   
-  answer = 'If a string is in single quotes, like this, \nyou can nest "double quotes".\nBut don\'t forget to escape your \backslashes\so you can type "\n"!'
-
+  answer = '\'If a string is in single quotes, like this,\nyou can nest "double quotes".\nBut don\\\'t forget to escape your \\backslashes\\\nso you can type "\\n"!\'';
 // (including the enclosing single quotes.)
 
   // Then check the console in spec.html to debug.

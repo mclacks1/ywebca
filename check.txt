@@ -1,2 +1,16 @@
 Marsheas-MacBook-Air.local
 /Users/marsheaclacks/dev/ywebca
+/Users/marsheaclacks/dev/ywebca/node_modules/ywca-chapter01
+/Users/marsheaclacks/dev/ywebca
+test
+Started
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0mStrings 4:
+'If a string is in single quotes, like this,
+you can nest "double quotes".
+But don\'t forget to escape your \backslashes\
+so you can type "\n"!'
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+
+48 specs, 0 failures
+Finished in 0.045 seconds

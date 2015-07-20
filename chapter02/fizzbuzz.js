@@ -1,5 +1,5 @@
 // Student Workspace
-  Fizz.buzz = Function () {
+  Fizz.buzz = function () {
   for (var i = 1; i <= 100; i ++){
     var fb = "";
     if(i % 3 == 0){

@@ -95,18 +95,20 @@ Exer.variables6 = function ( stacys ) {
 Exer.variables7 = function ( change ) {
 
   // You find a quarter.
+  change = 0.25 + change ;
 
   // Then you spend a dime on old fashioned candy.
+  change = change - 0.10;
+
   // How much money do you have now?
 
   // Use type coercion to turn your pocket change into a string add a dollar
+  change = "$" + change;
   // sign to the beginning.
 
   // Return that string.
 
-  var change = "$1.00 + $0.25" ;
-
-  return "$1.00 + $0.25 = $1.15" ;
+  return change;
 
 };
 
@@ -117,12 +119,12 @@ Exer.variables7 = function ( change ) {
 // Uncomment the following function by removing the slash-asterisk pairs.
 // Fix the function so no keywords or reserved words are improperly used.
 
-Exer.keywords1 = function ( two ) {
-  var two = 2;
-  var show = two+2;
-  bike += "2";
-  var shelf = two, show, shelf, bike;
-  return "2";
+Exer.keywords1 = function ( blue, two ) {
+  var pink = 2;
+  var boss = two+2;
+  blue += "2";
+  var foo = pink + boss + blue + two;
+  return foo
 };
 
 
@@ -266,11 +268,11 @@ Exer.return5 = function () {
 
   // A return statement.
 
-  var z =(strShift("abcABC123!@#"));
+  var z = strShift("abcABC123!@#") ;
 
-  var q =(strShift("a S d F j K l"));
+  var q = strShift(strShift("a S d F j K l")) ;
 
-  "z", "q" , (strShuffle);
+  return strShuffle(z, q) ;
 
 };
 
@@ -326,20 +328,15 @@ Exer.control2 = function ( bar ) {
 
   var foo;
 
-  var foo = "6";
+  foo = "What up";
 
-  return "foo"
+  console.log(foo);
 
-  console.log(foo)
+  var ding = bar + foo + bar;
 
+  var luux = confirm(strReverse(ding));
 
-  var ding;
-
-  return foo + bar;
-
-  var foo =(strReverse, ding)
-
-
+  return !luux;
 
 };
 
@@ -367,21 +364,21 @@ Exer.condition1 = function ( isSerious ) {
 Exer.condition2 = function ( temperature ) {
 
   // If temperature is greater than or equal to 70
+  if (temperature >= 70) {
+    console.log("Hermit crab warning!");
+  
+  } 
   // Then output:
   //     Hermit crab warning!
-
   // Otherwise, output
   //     Catch of the day: influenza, $14/lb.
-
+  else {
+    console.log("Catch of the day: influenza, $14/lb.");
+  }
   // In either case, also print
   //     Thanks for visiting Pier One and Three Quarters!
 
-  if(temperature >= 70){console.log("Hermet crab warning!")};
-
-  else
-    ({console.log("Catch of the day: influenza, $14/lb.");
-
-    {console.log}("Thanks for visting Pier One and Three Quarters!"); 
+  console.log("Thanks for visiting Pier One and Three Quarters!"); 
 
 };
 
@@ -390,64 +387,67 @@ Exer.condition2 = function ( temperature ) {
 Exer.condition3 = function ( whatDay ) {
 
   // Declare and initialize `luckyNumber`
-
-  // If the length of `whatDay` is 6 or less...
-
-  // If `whatDay` is "Mannersday"...
-  // If `whatDay` is "Foosday"...
-  // If `whatDay` is "Heyday"...
-  // Otherwise...
-
-  // Return `luckyNumber`
-
-
   var luckyNumber = 7;
 
-  if("What day" 6 <);
-
-  alert
-    (Foosday)}
-
-  else
-    {console.log}(Heyday)};
-
-  return (luckyNumber);
-
+  // If the length of `whatDay` is 6 or less...
+  if (whatDay.length <= 6) {
+    luckyNumber = luckyNumber + "!";
+  }
+  // If `whatDay` is "Mannersday"...
+  if (whatDay == "Mannersday") {
+    luckyNumber = luckyNumber + 4;
+  }
+  // If `whatDay` is "Foosday"...
+  else if (whatDay == "Foosday") {
+    luckyNumber = luckyNumber + 2;
+  }
+  // If `whatDay` is "Heyday"...
+  else if (whatDay == "Heyday") {
+    luckyNumber = luckyNumber + luckyNumber.charAt(0);
+  }
+  // Otherwise...
+  else {
+    luckyNumber = Infinity;
+  }
+  // Return `luckyNumber`
+  return luckyNumber;
 
 };
+
 
 // Conditional 4
 Exer.condition4 = function () {
 
   // Prompt the user
-
-  var input = prompt("Enter today's date, please.");
-
+  var userInput = prompt("Enter today's date, please.");
+  
   // If the user's input is not a number...
-  if (isNaN (date)) { 
-    console.log ("What do you think is, bub? Wonderland?");
+  if (typeof userInput != "number" || isNaN(userInput)) {
+    console.log("What do you think this is, bub? Wonderland?");
   }
 
   // Otherwise...
+  else {
     // If the user's input is less than 1...
-  else if (date < 1){
-    console.log(Negativelaaaannnd~!);
-  }  
+  if (userInput < 1) {
+      console.log("Negativelaaaaaaand~!");
+    }
     
     
     // If the user's input is greater than 31...
-    else if (date > 31) {
+    else if (userInput > 31) {
       console.log("Are they paying you overtime for this?");
     }
     // If the user's input between 29 and 31, inclusive...
-    else if (date >= 29 && date <= 31){
+    else if (userInput >= 29 && userInput <= 31) {
       console.log("I sure hope it isn't February.");
     }
     // Otherwise...
     else {
-      console.log("Did you know? There are exactly" + date + "ways to make today awesome!");
+      console.log("Did you know? There are exactly " +
+        userInput +" ways to make today awesome!");
     }
-
+  }
 };
 
 /*----------------------    WHILE AND DO WHILE LOOPS    ----------------------*/
@@ -455,22 +455,12 @@ Exer.condition4 = function () {
 // While 1
 // Turn the code in the function into a while loop.
 Exer.while1 = function () {
-  console.log("10 sheep");
-  console.log("9 sheep");
-  console.log("8 sheep");
-  console.log("7 sheep");
-  console.log("6 sheep");
-  console.log("5 sheep");
-  console.log("4 sheep");
-  console.log("3 sheep");
-  console.log("2 sheep");
-  console.log("1 sheep");
-
-  var numSheep=10;
- while(numSheep>0){
-   console.log(numSheep + " sheep");
-   numSheep =numSheep-1;
-
+  
+var numSheep = 10;
+while (numSheep > 0) {
+    console.log(numSheep + " sheep");
+    numSheep--;
+  }
 };
 
 /* jshint ignore:start */
@@ -590,7 +580,7 @@ var for1 = function () {
 Exer.for3 = function () {
 
   // Your work here
-  or (var i = 20; i >= 5; i--) {
+  for (var i = 20; i >= 5; i--) {
     if (i % 2 == 0) {
       console.log(i, "even")
     } else {
@@ -657,7 +647,6 @@ Exer.succinct1 = function ( kiwis ) {
 
 };
 
-};
 
 // Succinct 2
 // Edit the for loop to use the incrementation operator.
