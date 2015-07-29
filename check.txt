@@ -1,16 +1,77 @@
 Marsheas-MacBook-Air.local
 /Users/marsheaclacks/dev/ywebca
-/Users/marsheaclacks/dev/ywebca/node_modules/ywca-chapter01
-/Users/marsheaclacks/dev/ywebca
-test
-Started
-[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0mStrings 4:
-'If a string is in single quotes, like this,
-you can nest "double quotes".
-But don\'t forget to escape your \backslashes\
-so you can type "\n"!'
-[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
 
 
-48 specs, 0 failures
-Finished in 0.045 seconds
+Defining a Function exercises ***
+
+Parameters and Scopes exercises *******
+
+Nested Scope exercises ******************
+
+Functions as Values exercises **
+
+Declaration Notation exercises **
+
+The Call Stack exercises **
+
+Optional Arguments exercises **
+
+Closure exercises **
+
+Recursion exercises **
+
+Growing Functions exercises *
+
+Functions and Side Effects exercises **
+
+Minimum exercise *****
+
+Recursion exercise ******
+
+Bean Counting exercise ******
+
+The following was logged:
+The Log Says: I'm a secret passphrase!
+Defining 3:
+289
+THIS IS NO SPACE CUBE!
+SPACE CUBE DETECTED!!
+THIS IS NO SPACE CUBE!
+Declaration 1:
+You gotta believe!
+Declaration 2:
+Kick, punch, block! It's all in the mind!
+STACK 1 & 2:
+2
+durian
+3
+Key Pressed: up
+Key Pressed: up
+Key Pressed: down
+Key Pressed: down
+Key Pressed: left
+Key Pressed: right
+Key Pressed: left
+Key Pressed: right
+Key Pressed: B
+Key Pressed: A
+Key Pressed: select
+Key Pressed: start
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox is free to be twisted.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+"We have such sights to show you..."
+The pigs need 4sq. ft.
+The chickens need 16sq. ft.
+The sheep need 9sq. ft.

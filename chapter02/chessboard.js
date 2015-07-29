@@ -1,5 +1,5 @@
 // Student Workspace
-Chess.start = function () {
+Chess.start = function (n) {
 var size = n || 8;
 var chess = "";
 if (n == 0)  

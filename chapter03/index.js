@@ -11,7 +11,9 @@
 Exer.defining1 = function () {  //
 //==============================//
 
-return 3:
+var three = function(){
+  return 3;
+}
 
 };  // end Exer.defining1
 
@@ -23,7 +25,10 @@ return 3:
 //==============================//
 Exer.defining2 = function () {  //
 //==============================//
-console.log("The Log Says:" + message);
+var myLog = function(message){
+  console.log ("The Log Says: " + message)
+}
+
 
 };  // end Exer.defining2
 
@@ -34,7 +39,10 @@ console.log("The Log Says:" + message);
 //==============================//
 Exer.defining3 = function () {  //
 //==============================//
-
+var square = function(number){
+  console.log (number * number);
+  return number * number;
+}
 
 
 };  // end Exer.defining3
@@ -50,11 +58,17 @@ Exer.defining3 = function () {  //
 //     return the correct string, otherwise the other string.
 // `parameters1` should return `spaceCubeDetector`
 //===============================//
-Exer.parameters1 = function() {  //
+Exer.parameters1 = function(spaceCubeDetector) {  //
 //===============================//
-
-
-
+var spaceCubeDetector = function (length, width, height) {
+    if (length == width && length == height) {
+      return "SPACE CUBE DETECTED!!";
+    }
+    else {
+      return "THIS IS NO SPACE CUBE!";
+    }
+  }
+  return spaceCubeDetector;
  };  // end Exer.parameters1
 
 /*****************************    Parameters 2    *****************************/
@@ -68,7 +82,12 @@ Exer.parameters1 = function() {  //
 //================================================//
 Exer.parameters2 = function(spaceCubeDetector) {  //
 //================================================//
-
+spaceCubeDetector(3, 5, 3.14159265359);
+spaceCubeDetector(7, 7, 7);
+spaceCubeDetector(1, 2, 3);
+console.log("THIS IS NO SPACE CUBE!");
+console.log("SPACE CUBE DETECTED!!");
+console.log("THIS IS NO SPACE CUBE!");
 
 
 };  // Exer.parameters2
@@ -111,25 +130,23 @@ Exer.scopeExample = function() {
 //  Write your answers in this section
 
 Exer.scope1 = function() {
-  return /* return value for Scope 1 */ ;
+  return 5;
 };
-
 Exer.scope2 = function() {
-  return /* return value for Scope 2 */ ;
+  return 35;
 };
 
 Exer.scope3 = function() {
-  return /* return value for Scope 3 */ ;
+  return 7;
 };
 
 Exer.scope4 = function() {
-  return /* return value for Scope 4 */ ;
+  return 7;
 };
 
 Exer.scope5 = function() {
-  return /* return value for Scope 5 */ ;
+  return 35;
 };
-
 /*******************************************************************************
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    Nested Scope    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 *******************************************************************************/
@@ -207,58 +224,58 @@ Exer.nestExample = function() {
 //  Write your answers in this section.
 
 Exer.nest1 = function() {
-  return /* answer for Nest 1 */ ;
+  return 2 ;
 };
 Exer.nest2 = function() {
-  return /* answer for Nest 2 */ ;
+  return 5 ;
 };
 Exer.nest3 = function() {
-  return /* answer for Nest 3 */ ;
+  return 7 ;
 };
 Exer.nest4 = function() {
-  return /* answer for Nest 4 */ ;
+  return 11 ;
 };
 Exer.nest5 = function() {
-  return /* answer for Nest 5 */ ;
+  return 7 ;
 };
 Exer.nest6 = function() {
-  return /* answer for Nest 6 */ ;
+  return 11 ;
 };
 Exer.nest7 = function() {
-  return /* answer for Nest 7 */ ;
+  return 7 ;
 };
 Exer.nest8 = function() {
-  return /* answer for Nest 8 */ ;
+  return 17 ;
 };
 Exer.nest9 = function() {
-  return /* answer for Nest 9 */ ;
+  return 17 ;
 };
 Exer.nest10 = function() {
-  return /* answer for Nest 10 */ ;
+  return 17 ;
 };
 Exer.nest11 = function() {
-  return /* answer for Nest 11 */ ;
+  return 13 ;
 };
 Exer.nest12 = function() {
-  return /* answer for Nest 12 */ ;
+  return 13 ;
 };
 Exer.nest13 = function() {
-  return /* answer for Nest 13 */ ;
+  return 0 ;
 };
 Exer.nest14 = function() {
-  return /* answer for Nest 14 */ ;
+  return 0 ;
 };
 Exer.nest15 = function() {
-  return /* answer for Nest 15 */ ;
+  return 0 ;
 };
 Exer.nest16 = function() {
-  return /* answer for Nest 16 */ ;
+  return 2 ;
 };
 Exer.nest17 = function() {
-  return /* answer for Nest 17 */ ;
+  return 5 ;
 };
 Exer.nest18 = function() {
-  return /* answer for Nest 18 */ ;
+  return 0 ;
 };
 
 /*******************************************************************************
@@ -272,7 +289,9 @@ Exer.nest18 = function() {
 //=======================================================//
 Exer.values1 = function ( volume, spaceCubeDetector ) {  //
 //=======================================================//
-
+var volume = spaceCubeDetector;//assigns volume to be the same as spaceCubeDetector
+volume(1, 1, 1);
+return volume;
 
 
 };  // end Exer.values1
@@ -284,9 +303,10 @@ Exer.values1 = function ( volume, spaceCubeDetector ) {  //
 //====================================//
 Exer.values2 = function ( volume ) {  //
 //====================================//
-
-
-
+var volume = function (length, height, width) {
+  return length*height*width;
+  }
+  return volume;
 };  // end Exer.values2
 
 /*******************************************************************************
@@ -301,8 +321,10 @@ Exer.values2 = function ( volume ) {  //
 //=================================//
 Exer.declaration1 = function () {  //
 //=================================//
-
-
+function testNinja(){
+  console.log("You gotta believe!");
+}
+return testNinja;
 
 };  // end Exer.declaration1
 
@@ -315,8 +337,11 @@ Exer.declaration1 = function () {  //
 //=================================//
 Exer.declaration2 = function () {  //
 //=================================//
-
-
+trainNinja("punch");
+function trainNinja(move){
+  trainNinja = "Kick, " + move + ", block! It's all in the mind!";
+  console.log(trainNinja);
+}
 
 };  // edn Exer.declaration2
 
@@ -335,8 +360,11 @@ Exer.declaration2 = function () {  //
 //=================================//
 Exer.stack1 = function ( jack ) {  //
 //=================================//
-
-
+jack.push('apple', 'banana', 'chocolate chip');
+var yum = jack.pop();
+jack.push('bacon', 'snozzberries');
+yum += ' ' + jack.pop();
+return yum;
 
 };  // end Exer.stack1
 
@@ -355,8 +383,16 @@ Exer.stack1 = function ( jack ) {  //
 //=================================//
 Exer.stack2 = function ( jack ) {  //
 //=================================//
-
-
+jack.pop();
+jack.pop();
+jack.push('breadfruit');
+console.log(2);
+jack.push('strawberry','durian');
+jack.pop();
+jack.push('durian');
+console.log(jack[jack.length-1]);
+console.log(3);
+return jack;
 
 };  // end Exer.stack2
 
@@ -369,13 +405,18 @@ Exer.stack2 = function ( jack ) {  //
 //=================================//
 Exer.optional1 = function() {
 
+  var optional = function (first, second) {//creates a function that has two Parameters. Change the name of the function and the parameters
+
+  }
+
+return optional;
 };
 
 /*******************************    Optional 2    *******************************/
 // Call the function value we pass back to you with 4 arguments.
 //=================================//
 Exer.optional2 = function(exercise) {
-
+  exercise(1, "testing", true, "test");
 };
 
 /*******************************************************************************
@@ -391,8 +432,19 @@ Exer.optional2 = function(exercise) {
 // 5.) Return the new spaceCubeDetector.
 //=================================//
 Exer.closures1 = function(spaceCubeDetector) {
+  spaceCubeDetector = function (length, width) {
+    return function (height) {
+      if (length == width && length == height) {
+        return "SPACE CUBE DETECTED!!";
+      }
+      return "THIS IS NO SPACE CUBE!";
+    };
+  }
 
+  return spaceCubeDetector;
 };
+
+
 
 /*******************************    Closures 2    *******************************/
 // 1.) Make spaceCubeDetector into a function that takes a length.
@@ -402,8 +454,20 @@ Exer.closures1 = function(spaceCubeDetector) {
 // that takes a height and returns the normal results for spaceCubeDetector.
 // 5.) Return the new spaceCubeDetector.
 //=================================//
-Exer.closures1 = function(spaceCubeDetector) {
-
+Exer.closures2 = function(spaceCubeDetector) {
+function spaceCubeDetector(length){
+   return function (width){
+     return function (height){
+       if (height == length && height == width) {
+         return "SPACE CUBE DETECTED!!";
+       }
+       else {
+         return "THIS IS NO SPACE CUBE!";
+       }
+     }
+   }
+ }
+ return spaceCubeDetector;
 };
 
 /*******************************************************************************
@@ -413,7 +477,14 @@ Exer.closures1 = function(spaceCubeDetector) {
 /*******************************    Recursion 1    *******************************/
 //
 //=================================//
-Exer.recursion1 = function(code, puzzleBox) {
+Exer.recursion1 = function(code, controller) {
+var contraWinningAI = function(code, controller){
+    controller(code.curr());
+    if (code.next()) {
+      contraWinningAI(code, controller); 
+    }
+  };
+  contraWinningAI(code, controller);
 };
 
 /*******************************    Recursion 2   *******************************/
@@ -424,7 +495,17 @@ Exer.recursion1 = function(code, puzzleBox) {
 // 3.) Otherwise, call the recursive function again with `puzzleBox` as a
 // parameter then call `puzzleBox.click`'s returned function value.
 //=================================//
-Exer.recursion2 = function(code, puzzleBox) {
+Exer.recursion2 = function(puzzleBox) {
+
+ var clicking = function (puzzleBox) {
+   var clickingResult = puzzleBox.click();
+   if (clickingResult) {
+     clicking(puzzleBox);
+     clickingResult();
+   }
+ }
+ clicking(puzzleBox);
+
 };
 
 /*******************************************************************************
@@ -438,16 +519,11 @@ Exer.recursion2 = function(code, puzzleBox) {
 
 Exer.growing1 = function (pigPenSide, chickenPenSide, sheepPenSide) {
 
-  var pigPenSize = pigPenSide * pigPenSide;
-  var pigs = 'pigs';
-  console.log("The " + pigs + " need " + pigPenSize + "sq. ft.");
-  var chickenPenSize = chickenPenSide * chickenPenSide;
-  var chickens = 'chickens';
-  console.log("The " + chickens + " need " + chickenPenSize + "sq. ft.");
-  var sheepPenSize = sheepPenSide * sheepPenSide;
-  var sheeps = 'sheep';
-  console.log("The " + sheeps + " need " + sheepPenSize + "sq. ft.");
-
+  var animals = ["pigs", "chickens", "sheep"];
+  var penSizes = [pigPenSide*pigPenSide, chickenPenSide*chickenPenSide, sheepPenSide*sheepPenSide];
+  for (var i = 0; i < 3; i++) {
+    console.log("The "+ animals[i]+ " need " + penSizes[i] + "sq. ft.");
+  }
 };
 
 /*******************************************************************************
@@ -491,13 +567,18 @@ Exer.sideEffectExample = function() {
 /*******************************    Side Effects 1  *******************************/
 // Make a call to each function in the code example that is a pure function.
 //=================================//
-
-Exer.sideEffect1 = function() {
+ Exer.sideEffect1 = function() { 
+    pairsOfLegsToTotalLegs(2);
+    hasTail();
 };
+
 
 /*******************************    Side Effects 2  *******************************/
 // Make a call to each function in the code example that is not a pure function.
 //=================================//
 
 Exer.sideEffect2 = function() {
+  setBarkNoise('woof');
+  getBarkNoise();
+  bark('bark', 5);
 };

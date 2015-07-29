@@ -523,11 +523,11 @@ console.log("Train# " + trainNum + ": In flight!?");
 // Indenting 1
 // Correctly indent the following code block using TWO spaces for each block
 Exer.indenting1 = function() {
-var firstName = "Zachery"; 
-var lastName = "Moneypenny"; 
-if(firstName === "Zachery"){ 
-  lastName = "Johnson"; 
-}
+  var firstName = "Zachery"; 
+  var lastName = "Moneypenny"; 
+  if(firstName === "Zachery"){ 
+    lastName = "Johnson"; 
+  }
   };
 
 // Indenting 2
@@ -537,7 +537,7 @@ Exer.indenting2 = function() {
     var lastName = "Moneywhistle"; 
     if(firstName === "Penny"){ 
         lastName = "Johnson"; 
-  }  
+    }  
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
@@ -561,17 +561,15 @@ Exer.for1 = function () {
 // Rewrite the repetative code with for loops.
 Exer.for2 = function () {
 
-var for1 = function () {
-
-  var scream = "...";
-  for ( var count = 0 ; count < 7;  count++) {
-    console.log( scream );
-    scream = "    " + scream + "AA";
+for (var i = 0; i < 2; i++) {
+    console.log( "Hi!" );
+    for (var j = 0; j < 3; j++) {
+      console.log( "My name is" );
+    }
+    console.log( "Slim Shady" );
   }
-  scream += "H!"
-  console.log( scream );
 
-};
+  }; 
 /* jshint ignore:end */
 
 // For 3
@@ -587,10 +585,6 @@ Exer.for3 = function () {
       console.log(i, "odd");
     }
   }
-
-};
-
-
 
 };
 
@@ -652,7 +646,7 @@ Exer.succinct1 = function ( kiwis ) {
 // Edit the for loop to use the incrementation operator.
 Exer.succinct2 = function () {
 
-  for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
+  for ( var hippo = 2; hippo <= 10; hippo++ ) {
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
@@ -665,7 +659,7 @@ Exer.succinct3 = function () {
   var message = "Reverse me!";
   var pointer = message.length;
   while( pointer > 0 ) {
-    console.log( message.charAt( pointer-- ) );
+    console.log( message.charAt( --pointer ) );
   }
 
 };
@@ -714,11 +708,11 @@ Exer.switch1 = function ( animal ) {
 /* jshint ignore:start */
 Exer.capitalization1 = function() {
 
-  var ZeRo = 0;
-  var HAPPYCAT = new string("How did this get here! I'm not good at computer!");
-  for (var Index = 0; I < HAPPYCAT.Length; Index++) {
-    if (Index % 4 == ZeRo) {
-      Console.Log(HAPPYCAT);
+  var zero = 0;
+  var happyCat = new String("How did this get here! I'm not good at computer!");
+  for (var index = 0; index < happyCat.length; index++) {
+    if (index % 4 == zero) {
+      console.log(happyCat);
     }
   }
 
@@ -730,8 +724,10 @@ Exer.capitalization1 = function() {
 Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
   if ( war ) {
+
     if ( missiles ) {
-      missiles.launch();
+      // missiles.launch();
+      // something about wheat
     } else {
       cower();
     }
@@ -741,26 +737,21 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
     } else if ( sheep ) {
       sheep.trade( wood, 3 );
     } else {
-      brick.buy(2);
+      brick.buy(2); // oh no! Look who it is, bandits! These bricks are outrageous!
     }
   }
 
 };
 
+
 Exer.comments2 = function () {
 
-  // your work here
-
-  /*                      /
-     *              /      /
-     *          /  /   /  /         /
-     *         /      /       /    /
-     *       ,---------------.   ,-,
-     *      /                 `-'  |
-     *     [   A I R M A I L   |   |
-     *      \                 ,-.  |
-     *       `---------------'   `-`
-     *
-     */
+/*
+ I first found this number scrawled on the back of one of
+ my notebooks a few years ago. Since then, it has often
+ dropped by, showing up in phone numbers and the serial
+ numbers of products that I've bought. It obviously likes
+ me, so I've decided to keep it.
+*/
 
 };
